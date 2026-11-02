@@ -1,0 +1,25 @@
+{
+  "name": "campuslink",
+  "private": true,
+  "version": "0.1.0",
+  "description": "校园暖廊通 CampusLink —— 冬季校园室内暖廊智能导航（模拟数据版）",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:compat": "vite --configLoader native",
+    "build": "vite build",
+    "build:compat": "vite build --configLoader native",
+    "preview": "vite preview --port 4173",
+    "check": "node scripts/check-route.mjs",
+    "check:data": "node scripts/check-real-data.mjs",
+    "check:real-route": "node scripts/check-real-route.mjs",
+    "check:render": "vite build --ssr scripts/render-check.mjs --outDir dist/ssr-check --configLoader native && node dist/ssr-check/render-check.js"
+  },
+  "dependencies": {
+    "vue": "^3.5.44"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.10",
+    "vite": "^8.3.5"
+  }
+}
