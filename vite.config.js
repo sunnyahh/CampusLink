@@ -5,6 +5,7 @@ import vue from '@vitejs/plugin-vue'
 // 1. 启用 Vue 3 单文件组件（.vue）支持
 // 2. 固定开发服务器端口，方便你知道打开哪个网址
 export default defineConfig({
+  base: '/CampusLink/',
   plugins: [vue()],
   server: {
     port: 5173,
